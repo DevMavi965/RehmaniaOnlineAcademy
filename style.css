@@ -1,0 +1,178 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amiri', serif;
+    background-color: #f8f9fa;
+    color: #2E125F;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #2E125F;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    /* border: 1px solid; */
+}
+.logoimg{
+    border-radius: 50%;
+    width: 10vh;
+}
+.navbar .nav-links {
+    list-style-type: none;
+}
+
+.navbar .nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Home Section */
+.home-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #c9e6e6;
+}
+
+.home-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.home-section .btn {
+    padding: 15px 30px;
+    background-color: #2E125F;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Cards Section */
+.cards-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    /* background: url(imags/bg.png) no-repeat;
+    background-size: 100%;
+    background-attachment: fixed; */
+    background-color: #c9e6e6;
+}
+
+.card {
+    background-color: #fff;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 2px 9px #2e125f6c;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    margin-bottom: 20px;
+    /* filter: drop-shadow(-4px 3px 3px #2e125f6c); */
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+/* Loading Animation */
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top: 5px solid #2E125F;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Services Section */
+.services-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #d1e0e0;
+}
+
+.services-section h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.service {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .cards-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+.footer{
+    background-color: #2E125F;
+    color: white;
+}
+.footer ul {
+list-style-type: none;
+display: flex;
+justify-content: space-around;
+}
