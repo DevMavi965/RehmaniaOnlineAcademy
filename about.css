@@ -1,0 +1,34 @@
+#navbar{
+    background-color: #2E125F;
+    color: white;
+}
+.myclr{
+    color: #2E125F;
+}
+.mybg{
+    background-color: #2e125f;
+}
+.mybgHover:hover{
+    background-color: #2e125fd2;
+    /* transform: translateY(-2px); */
+}
+.hoveru:hover{
+    color: red;
+}
+.hoverf:hover{
+    color:blue;
+}
+.hoverw:hover{
+    color: rgb(46, 223, 134);
+}
+.hoveri:hover{
+    color: rgb(230, 18, 159);
+}
+.clrw{
+    color: white;
+}
+.csd{
+    color: #fff;
+
+    text-shadow: 0px 0px px #2E125F;
+}
